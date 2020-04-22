@@ -1,0 +1,5 @@
+/* 全体背景黒、文字白 */
+body{
+  background-color:#000;
+  color:#fff; 
+}

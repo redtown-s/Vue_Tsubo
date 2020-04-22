@@ -1,0 +1,11 @@
+/* 全体背景：黒、文字：白 */
+body{
+  background-color:#000;
+  color:#fff; 
+}
+
+/* 画面両幅の余白 */
+.container{
+width: 960px;
+margin: auto;
+}

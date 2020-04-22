@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <!-- リスト2-4-10　価格の後ろにセール実施中は表示されないが、DOMには出力される -->
+    <div id="app">
+      {{price}}円<span v-show="price < 1000">セール実施中</span>
+    </div>
+    <script src="main2_4_10.js"></script>
+  </body>
+</html>

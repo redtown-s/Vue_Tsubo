@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- リスト2-9-7　単一のセレクトボックスにバインドする -->
+      <p>当店のご利用頻度は？：{{answer}}</p>
+      <select v-model="answer">
+        <option disabled value="">選択してください</option>
+        <!--option要素のdisabled属性は、option要素を無効にする属性。disabled属性が存在する場合、そのoption要素は無効になる。-->
+        <option value="初めて">初めて</option>
+        <option value="週一回以上">週一回以上</option>
+        <option value="月二回以上">月二回以上</option>
+        <option value="半年に一回">半年に一回</option>
+      </select>
+    </div>
+    <script src="main2_9_7.js"></script>
+  </body>
+</html>

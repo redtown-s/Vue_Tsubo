@@ -1,0 +1,4 @@
+/* Enterフェーズ開始前と、Leaveフェーズ終了後のスタイル */
+.v-enter, .v-leave-to{
+  opacity
+}

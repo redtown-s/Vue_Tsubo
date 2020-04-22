@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="main2_7_1.css" /> -->
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <!-- リスト2-8-3　算出プロパティを監視する-->
+    <div id="app">
+      <template v-if="stock >=1 ">
+        <span class="num">残り{{stock}}個</span>
+        <button class="btn" v-on:click="onDeleteItem">削除</button>
+      </template>
+      {{statusMessage}}
+    </div>
+    <script src="main2_8_3.js"></script>
+  </body>
+</html>

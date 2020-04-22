@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main2_4_5.css" />
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <!-- リスト2-4-5　class属性にバインドする -->
+    <!-- 要素の先頭文字だけをcapitalizeで大文字に変換 -->
+    <div id="app">
+      <p v-bind:class="{capitalize: isCapital}">hello vue!</p>
+    </div>
+    <script src="main2_4_5.js"></script>
+  </body>
+</html>

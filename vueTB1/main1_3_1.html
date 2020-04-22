@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>サンプル</title>
+  </head>
+  <body>
+    <div id="app">
+      <ul>
+        <li v-for="item in list">{{item.name}}　{{item.price}}円</li>
+      </ul>
+    </div>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+    <script>
+      let app = new Vue({
+        el: "#app",
+        data: {
+          list: [
+            { name: "商品A", price: 1000 },
+            { name: "商品B", price: 2000 },
+            { name: "商品C", price: 980 },
+          ],
+        },
+      });
+
+      // console.log()の活用 2020年4月10日
+      let today = new Date();
+
+      let year = today.getFullYear();
+      let month = today.getMonth() + 1;
+      let day = today.getDate();
+
+      console.log(year + "年" + month + "月" + day + "日");
+    </script>
+  </body>
+</html>

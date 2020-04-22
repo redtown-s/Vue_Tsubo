@@ -1,0 +1,22 @@
+/* リスト2-10-2　name属性値でエフェクトを分類する */
+/* シンプルなフェードイン */
+.slideInLeft-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* 左からスライドイン */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+

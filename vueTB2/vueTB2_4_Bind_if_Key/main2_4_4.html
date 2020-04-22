@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- リスト2-4-4　style属性にバインドする -->
+      <!-- <p style="fontsize: 40px;">文字サイズは40pxです</p>を出力する -->
+      <p v-bind:style="{fontsize: pSize}">文字サイズは{{pSize}}です</p>
+    </div>
+    <script src="main2_4_4.js"></script>
+  </body>
+</html>

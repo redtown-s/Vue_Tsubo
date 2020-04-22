@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- リスト2-9-9　セレクトボックスの選択肢にバインドする
+ -->
+      <p>当店のご利用頻度は？：{{answer}}</p>
+      <select v-model="answer">
+        <option value="">選択してください</option>
+        <option value="宿泊費">宿泊費</option>
+        <option value="食費">食費</option>
+        <option value="交通費">交通費</option>
+      </select>
+    </div>
+    <script src="main2_9_8.js"></script>
+  </body>
+</html>

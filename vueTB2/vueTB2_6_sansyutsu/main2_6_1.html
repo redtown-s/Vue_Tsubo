@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- リスト2-6-1　今年がうるう年かどうかを判定する算出プロパティ -->
+      調べたい年：<input type="text" v-model="year" /><br />
+      {{year}}年は{{isUrudoshi ? 'うるう年です' : 'うるう年ではありません'}}
+    </div>
+    <script src="main2_6_1.js"></script>
+  </body>
+</html>

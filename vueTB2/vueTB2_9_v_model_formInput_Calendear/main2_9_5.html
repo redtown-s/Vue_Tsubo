@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- リスト2-9-5　グループ化したチェックボックスにバインドする -->
+      <p>ご注文をお選びください：{{selection}}</p>
+      <label>
+        <input type="checkbox" v-model="answer" value="ケーキ" />ケーキ</label
+      >
+      <label>
+        <input type="checkbox" v-model="answer" value="紅茶" /> 紅茶</label
+      >
+      <label>
+        <input
+          type="checkbox"
+          v-model="answer"
+          value="コーヒー"
+        />コーヒー</label
+      >
+    </div>
+    <script src="main2_9_5.js"></script>
+  </body>
+</html>

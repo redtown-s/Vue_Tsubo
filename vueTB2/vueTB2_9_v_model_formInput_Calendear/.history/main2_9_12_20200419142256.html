@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- リスト2-9-12　フォームコントロールの同期 -->
+      <!-- input要素には当日日付が最初から表示される -->
+      <p>あなたの好きな色は？：</p>
+      <input type="color">{{}}
+      <input type="range">
+
+
+      <input type="date" v-model="arrival_date" v-bind:min="min_date" />
+    </div>
+    <script src="main2_9_12.js"></script>
+  </body>
+</html>

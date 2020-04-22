@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <!-- リスト2-9-4　チェックボックスに文字列をバインドする -->
+    <div id="app">
+      <p>ケーキはお好きですか？：{{answer}}</p>
+      <input
+        type="checkbox"
+        id="cake"
+        v-model="answer"
+        true-value="はい"
+        false-value="いいえ"
+      />
+      <label for="cake">チェックしてください</label>
+    </div>
+    <script src="main2_9_4.js"></script>
+  </body>
+</html>

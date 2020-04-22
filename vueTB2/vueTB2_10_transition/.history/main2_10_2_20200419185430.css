@@ -1,0 +1,19 @@
+/* リスト2-10-2　name属性値でエフェクトを分類する */
+/* シンプルなフェードイン */
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Enterフェーズ終了時と、Leaveフェーズ開始時のスタイル */
+/* デフォルトでは表示されている要素には、opacity: 1をしなくてもよいので、.fade-enter-to,.fade-leaveは省略できる */
+.fade-enter-to,
+.fade-leave {
+  opacity: 1;
+}
+
+/* Enterフェーズ継続中と、Leaveフェーズ継続中のスタイル */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s; /* 表示の切り替えにかかる時間0.5秒。長いほど時間かかる */
+}

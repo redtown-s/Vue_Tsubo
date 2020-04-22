@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <!-- リスト2-5-1　金額を3桁ずつカンマで区切った書式で出力するフィルターを作成し、グローバルスコープに登録する -->
+    <div id="app">
+      <!-- 2-5-2　フィルターを適用する -->
+      {{ price | number_format }}
+    </div>
+    <script src="main2_5_3.js"></script>
+  </body>
+</html>

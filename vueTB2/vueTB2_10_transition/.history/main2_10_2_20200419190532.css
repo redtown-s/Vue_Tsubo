@@ -1,0 +1,25 @@
+/* リスト2-10-2　name属性値でエフェクトを分類する */
+/* シンプルなフェードイン */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* 左からスライドイン */
+.slideInLeft-enter-active,
+.slideInLeft-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+.slideInLeft-enter,
+.slideInLeft-leave-to {
+  opacity: 0;
+  transform: translateX(-100%); /*表示が消えるとき、x-100%（画面の左）*/
+}
+.slideInLeft-enter-to,
+.slideInLeft-leave {
+  transform: translateX(0%); /* スライドが戻るとき右に0%の位置に戻る。10%なら右に10%の位置に一度行く */
+}

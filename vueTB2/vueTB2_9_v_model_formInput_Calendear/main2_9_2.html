@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <!-- リスト2-9-2　入力文字をDOMへリアルタイムに反映する -->
+    <div id="app">
+      <input type="text" v-on:input="yearInputHandler" v-bind="year" />
+      <p>{{year}}</p>
+    </div>
+    <script src="main2_9_2.js"></script>
+  </body>
+</html>

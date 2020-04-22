@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- リスト4　フィルターを組み合わせて使用する -->
+      <!-- 1000円　1,000円と表示される -->
+      {{price | unit}} {{ price | number_format | unit}}
+    </div>
+    <script src="main2_5_4.js"></script>
+  </body>
+</html>

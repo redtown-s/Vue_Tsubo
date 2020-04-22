@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <!-- リスト2_4_1 テキストの出力
+<div id="app">
+  {{message}}
+</div> -->
+
+    <!-- リスト2_4_2 式を使った出力 -->
+    <!-- リスト2_4_2 式を使った出力
+ {{ ... }}にはjsの式も記述できる。
+ 以下は三項演算子を使った例 -->
+    <div id="app">
+      {{lang == 'ja' ? message_ja : message_en}}
+    </div>
+    <script src="main2_4_1.js"></script>
+  </body>
+</html>

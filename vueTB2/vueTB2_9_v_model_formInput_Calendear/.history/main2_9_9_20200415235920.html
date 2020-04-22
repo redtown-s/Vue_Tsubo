@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://jp.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- リスト2-9-9　セレクトボックスの選択肢にバインドする
+ -->
+      <p>当店のご利用頻度は？：{{answer}}</p>
+      <select v-model="answer">
+        <!--disabled※無効ディセイボウ-->
+        <option disabled value="">選択してください</option>
+        <option v-for="item in options" v-bind:value="item.label" v-bind:key="item.code">{{item.label}}</option>
+        <option v-for:value="月二回">月二回</option>
+        <option v-for:value="半年に一回">半年に一回</option>
+      </select>
+    </div>
+    <script src="main2_9_8.js"></script>
+  </body>
+</html>
