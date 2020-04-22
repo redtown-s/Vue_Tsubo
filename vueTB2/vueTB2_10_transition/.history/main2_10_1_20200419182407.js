@@ -1,4 +1,0 @@
-let app = new Vue({
-
-  
-})
