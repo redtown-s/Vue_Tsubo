@@ -117,12 +117,14 @@ positionプロパティで指定するのは、配置方法（基準位置）の
 /* +送料240円 */
 .item .shipping-fee {
   display: inline-block; /* +送料240円をインラインブロック化 */
+  font-size: 80%; /* +送料240円が改行されたのでフォントを小さくした */
   background-color: #f7cd12;
   color: #000;
 }
 
 /* 送料無料 */
 .item .shipping-fee.none {
+  font-size: 80%; 
   background-color: #bf0000;
   color: #fff;
 }
